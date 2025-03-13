@@ -14,3 +14,5 @@ at software.amazon.awssdk.services.s3.model.S3Exception$BuilderImpl.build(S3Exce
 ```
 
 La dernière version pleinement fonctionnelle est la 2.29.52.
+
+Pour tester, il suffit de mettre les credentials vers un bucket créé avec Cellar dans la classe main.
