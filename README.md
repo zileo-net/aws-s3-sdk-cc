@@ -16,3 +16,11 @@ at software.amazon.awssdk.services.s3.model.S3Exception$BuilderImpl.build(S3Exce
 La dernière version pleinement fonctionnelle est la 2.29.52.
 
 Pour tester, il suffit de mettre les credentials vers un bucket créé avec Cellar dans la classe main.
+Il est aussi possible de mettre AWS SDK en debug dans log4j2.xml pour voir la tentative de signature...
+
+```
+2025-03-13 15:29:32 [main] DEBUG software.amazon.awssdk.http.auth.aws.internal.signer.DefaultV4RequestSigner:85 - AWS4 String to sign: AWS4-HMAC-SHA256
+20250313T142932Z
+20250313/eu-west-1/s3/aws4_request
+3cb02897da241f6ed12e2ac1992a331332c4d0a380855d5df087b2d09b09d9b9
+```
