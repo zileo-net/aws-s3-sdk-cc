@@ -1,0 +1,15 @@
+.classpath
+.project
+.settings/
+target/
+*/target/**
+.idea/
+*.iml
+*/src/main/java/assets/tomtom/
+*/src/main/resources/application.conf
+*/src/test/resources/application.conf
+*/tmp/logs/log.json
+tmp/logs/log.json
+batch/src/main/resources/batch.conf
+.DS_Store
+*/src/main/resources/Eurofides
