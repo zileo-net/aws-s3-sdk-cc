@@ -24,3 +24,11 @@ Il est aussi possible de mettre AWS SDK en debug dans log4j2.xml pour voir la te
 20250313/eu-west-1/s3/aws4_request
 3cb02897da241f6ed12e2ac1992a331332c4d0a380855d5df087b2d09b09d9b9
 ```
+
+Pour que cela fonctionne, il faut ajouter ceci au début du main : 
+
+```java
+System.setProperty(SdkSystemSetting.AWS_REQUEST_CHECKSUM_CALCULATION.property(),"WHEN_REQUIRED");
+```
+
+Source : https://github.com/aws/aws-sdk-java-v2/discussions/5802
